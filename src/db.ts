@@ -1,7 +1,12 @@
+
 import { Collection, Cluster, connect } from "couchbase";
 
 // Connect to Couchbase
 module.exports= { 
+  /**
+ * Connects to Couchbase and returns a Promise of Collection.
+ * @returns {Promise<Collection>} A Promise of Collection.
+ */
 connectToCouchbase :  async() : Promise<Collection> => {
   let cluster: Cluster;
   try {

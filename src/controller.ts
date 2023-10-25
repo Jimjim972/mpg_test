@@ -4,8 +4,17 @@ import { Console } from 'console';
 
 const service = new Service();
 
+/**
+ * Controller class for handling HTTP requests related to leagues and teams.
+ */
 class Controller {
 
+    /**
+     * Retrieves the league of users with the given ID.
+     * @param req - The request object.
+     * @param res - The response object.
+     * @returns A Promise that resolves to the league of users name .
+     */
     public async getUsersLeague(req: Request, res: Response) {
         try {
             console.log('req.params.id', req.params.id);
@@ -16,6 +25,12 @@ class Controller {
         }
     }
 
+    /**
+     * Creates a new league with the provided information.
+     * @param req - The request object containing the league information in the request body.
+     * @param res - The response object to send the result or error.
+     * @returns A success message if the league was created successfully, or an error message if there was an issue.
+     */
     public async createLeague(req: Request, res: Response) {
         try {
             await JSON.stringify(req.body);
@@ -26,6 +41,12 @@ class Controller {
         }
     }
 
+    /**
+     * Updates a team with the given ID and name.
+     * @param req - The request object.
+     * @param res - The response object.
+     * @returns A Promise that resolves to void.
+     */
     public async updateTeam(req: Request, res: Response) {
         try {
             await JSON.stringify(req.body);
