@@ -1,6 +1,6 @@
 # MPG_test
 
-Il s'agit d'une application Node.js en Typescript réalisé pour les test techiques de MPG
+Il s'agit d'une application Node.js en Typescript réalisée pour les tests techiques de MPG
 
 ## Table des matières
 
@@ -9,10 +9,11 @@ Il s'agit d'une application Node.js en Typescript réalisé pour les test techiq
 3. [Démarrage](#3-démarrage)
 4. [Utilisation](#4-utilisation)
 5. [Obstacles](#5-obstacles)
+6. [Conclusion](#6-conclusion)
 
 ## 1. Installation
 
-Pour exécuter cette application, vous devez installer ses dépendances. Assurez-vous d'avoir Node.js et Couchbase Server installés.
+Pour exécuter cette application, vous devez installer ses dépendances. Assurez-vous d'avoir Node.js et Couchbase Server déjà installés.
 
 
 # Cloner le dépôt
@@ -27,8 +28,8 @@ npm install
 
 ## 2. Configuration
 
-lance le server Couchbase
-Vérfifier vos identifiant Couchbase
+Lancez le server Couchbase.
+Vérfifiez vos identifiants Couchbase.
 
 CB_USER = 'admin'
 CB_PASS = 'monpetitgazon'
@@ -39,14 +40,14 @@ CB_BUCKET = 'mpg'
 ## 3. Démarrage
 
 npm run start
-Utiliser un client(Postman) pour lancer les requêtes
+
 
 ## 4. Utilisation
 
-Utiliser un client(Postman) pour lancer les requêtes
+Utilisez un client(Postman) pour lancer les requêtes.
 
 
-Vous pouvez utiliser les points d'accès de l'API pour effectuer des opérations CRUD sur une collection "utilisateurs". Voici quelques exemples de points d'accès :
+Vous pouvez utiliser les points d'accès de l'API pour effectuer des opérations demandées. Voici les points d'accès :
 
 GET /usersLeague/:id - Obtenir tous les utilisateurs de la league
 POST /createLeague - Créer une nouvelle league
@@ -55,8 +56,10 @@ PATCH /updateTeam/:id - Modifier le nom de la league
 
 ## 5. Obstacles
 
-L'installation de couchebase a pas été facile car je n'ai pas pu l'installer avec le client je passer par Docker.
-Ensuite la comunnication DB<=>Api a été compliqué car je n'ai pas trouvé tout de suite comment écrire l'adresse du server couchbase.
+L'installation de couchebase n'a pas été facile car je n'ai pas pu l'installer avec le client je suis passé par Docker.
+Ensuite la comunnication DB<=>Api a été compliquée car je n'ai pas trouvé tout de suite comment écrire l'adresse du server couchbase.
+
+## 6. Conclusion
 
 Ce projet a été une belle expérience pour moi car l'utilisation de couchbase a été une première.
-Merci pour le temps accorder à la revue de mon code.
+Merci pour le temps accordé à la revue de mon code.
