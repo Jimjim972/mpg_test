@@ -26,16 +26,7 @@ const controller: Controller = new Controller();
 // Middleware
 app.use(bodyParser.json());
 
-/**
- * The root route of the application.
- * 
- * @param req - The incoming request object.
- * @param res - The outgoing response object.
- */
-app.get('/', (req : Request, res : Response) => {
-    console.log('Hello World!');
-    res.send('Hello World!');
-});
+
 
 /**
  * The route to get all users in a league.

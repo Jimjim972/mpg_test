@@ -3,6 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const couchbase_1 = require("couchbase");
 // Connect to Couchbase
 module.exports = {
+    /**
+   * Connects to Couchbase and returns a Promise of Collection.
+   * @returns {Promise<Collection>} A Promise of Collection.
+   */
     connectToCouchbase: async () => {
         let cluster;
         try {
